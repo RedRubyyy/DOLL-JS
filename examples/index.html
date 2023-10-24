@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <style>
+        .text-heading1-docs {
+            font-size: 2rem;
+        }
+    </style>
+    <script src="../dist/doll.min.js"></script>
+</head>
+<body>
+    <h1 class="text-heading1-docs" id="heading-1"></h1>
+    <h2 class="text-heading2-docs" id="heading-2">WELLCOME TO TXTW LIBRARY</h2>
+
+    <script >
+        const h1 = document.querySelector('h1');
+        const myWriter = new TextWriter();
+        myWriter.writeTo(h1 , ['example'])
+        console.log(myWriter)
+    </script>
+</body>
+</html>
